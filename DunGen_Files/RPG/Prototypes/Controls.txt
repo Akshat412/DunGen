@@ -1,0 +1,10 @@
+Controls: 
+
+W A S D : Move About
+
+LMB : Light Attack
+RMB : Heavy Attack
+
+H : Healing Spell
+
+

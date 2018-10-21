@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1223699889047750}
+  m_IsPrefabParent: 1
+--- !u!1 &1223699889047750
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4353400837350396}
+  - component: {fileID: 114898608612504192}
+  - component: {fileID: 114539038173244644}
+  m_Layer: 0
+  m_Name: BSP_Level_Generator
+  m_TagString: proceduralGenerator
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4353400837350396
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1223699889047750}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -33.47905, y: -11.59472, z: -0.16811803}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114539038173244644
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1223699889047750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e859367d5c4e894198fee0b17a09706, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  f_h: 10
+  f_l: 7
+  seed: an
+  digits: 2
+  max: 100
+--- !u!114 &114898608612504192
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1223699889047750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 863c7b37e032bb94db7a4bfa69458300, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minSize: 5
+  seed: mateo
+  height: 28
+  width: 28
+  currentLevel: 0
+  hardMin_enemy: 3
+  hardMax_enemy: 8
+  hardMin_item: 5
+  hardMax_item: 10
+  hardMin_stains: 4
+  hardMax_stains: 8
+  floorCell: {fileID: 1187019293813200, guid: 6ac349cdb90520b40bb18eb9d569f897, type: 2}
+  wallTile_plain: {fileID: 1923529072935234, guid: a94f2c743f8ae4d499cdf64fb9c3f364,
+    type: 2}
+  wallTile_bot: {fileID: 1480395381485938, guid: 6d0e575723aa80c488a46dd54d830bf7,
+    type: 2}
+  wallTile_top: {fileID: 1014594803761192, guid: fdc806e7ea7d52e4bafbea1560cbe827,
+    type: 2}
+  wallTile_side: {fileID: 1643351588973414, guid: 563c8618dfd28ea47a03697a77f8ac5e,
+    type: 2}
+  wallTile_oneNeighbor: {fileID: 1526550607918094, guid: f1c591a9dcc4a5c40bad165cf51b871b,
+    type: 2}
+  wallTile_twoNeighbors_opposite: {fileID: 1458455443743322, guid: 3a9bab61fa70e5042913d6ca0a183a24,
+    type: 2}
+  wallTile_threeNeighbors: {fileID: 1797503106756860, guid: 06b8239af08bc5e4eaa4762886c8188e,
+    type: 2}
+  floorDecor_dirt: {fileID: 1328826052289726, guid: 37a1c3de3c71dac44a66e7f3dc8e50db,
+    type: 2}
+  ghost: {fileID: 1162906105255492, guid: 083e0b4962f22754fb90788cb530cb86, type: 2}
+  wizard: {fileID: 1397699363786944, guid: 4355410aac5eab14581c471b7de4f0fa, type: 2}
+  ogre: {fileID: 1674591844661364, guid: 4d72c3853d65d7d4eb0b1c39b22c5b1a, type: 2}
+  healthPotion: {fileID: 1858092744349478, guid: af770fec4ddc3844b85b284518ea4c05,
+    type: 2}
+  manaPotion: {fileID: 1620637578035600, guid: 5ce002122361dfe4a9a3dbc1774fca5e, type: 2}
+  holderTemplate: {fileID: 1691926056385704, guid: 79749356306e2914e99b64e33d3ac53e,
+    type: 2}
+  tilesHolderInstance: {fileID: 0}
+  enemyHolderInstance: {fileID: 0}
+  potionsHolderInstance: {fileID: 0}
+  startPoint: {fileID: 0}
+  exitLadder: {fileID: 0}
+  player: {fileID: 0}
+  minLevel_ghost: 3
+  minLevel_wizard: 0
+  minLevel_ogre: 5
+  LevelEndUI: {fileID: 0}
+  UIController: {fileID: 0}
+  enemyKilledPoints: 10
+  potionDrankPoints: 2

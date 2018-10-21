@@ -1,0 +1,24 @@
+﻿# Tiled2Unity generated file. Do not modify by hand.
+# Wavefront file for 'BigSquare_mesh_0008.obj'
+
+# Vertices (Count = 4)
+v -224 -32 0
+v -240 -32 0
+v -240 -16 0
+v -224 -16 0
+
+# Texture cooridinates (Count = 4)
+vt 0.0625 0.9375
+vt 0.125 0.9375
+vt 0.125 1
+vt 0.0625 1
+
+# Normal
+vn 0 0 -1
+
+# Mesh description
+g BigSquare_mesh_0008
+
+# Faces
+f 1/1/1 2/2/1 3/3/1 4/4/1
+
